@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.boards-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.boards__loader {
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+
+	&:last-child {
+		margin-top: 0;
+	}
+
+	&-feed {
+		margin: 30px 0;
+		display: inline-grid;
+		grid-template-columns: repeat(auto-fit, 280px);
+		grid-gap: 15px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.boards__loader {
+		align-items: center;
+	}
+}
